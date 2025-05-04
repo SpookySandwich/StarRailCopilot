@@ -88,6 +88,8 @@ Optimization:
   WhenTaskQueueEmpty:
     value: goto_main
     option: [ stay_there, goto_main, close_game ]
+Startup:
+  RunAtStartup: false
 
 # ==================== Daily ====================
 

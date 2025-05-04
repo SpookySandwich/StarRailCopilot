@@ -235,6 +235,16 @@
       "close_game": "关闭游戏"
     }
   },
+  "Startup": {
+    "_info": {
+      "name": "启动设置",
+      "help": ""
+    },
+    "RunAtStartup": {
+      "name": "开机自启动",
+      "help": "开机后自动运行 SRC（仅限windows）"
+    }
+  },
   "Dungeon": {
     "_info": {
       "name": "每日副本设置",

@@ -590,6 +590,14 @@ class AlasGUI(Frame):
                 logger.info(
                     f"Save config {filepath_config(config_name)}, {dict_to_kv(modified)}"
                 )
+                
+                if k == "Alas.Startup.RunAtStartup":
+                    import sys
+                    if sys.platform.startswith('win'):
+                        from deploy.Windows.startup import set_startup_status
+                        set_startup_status(v)
+                        logger.info(f"Set startup status to {v}")
+                        
                 config_updater.write_file(config_name, config)
         except Exception as e:
             logger.exception(e)

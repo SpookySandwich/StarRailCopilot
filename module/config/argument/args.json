@@ -144,6 +144,12 @@
           "close_game"
         ]
       }
+    },
+    "Startup": {
+      "RunAtStartup": {
+        "type": "checkbox",
+        "value": false
+      }
     }
   },
   "Restart": {
